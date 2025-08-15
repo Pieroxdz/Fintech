@@ -1,0 +1,16 @@
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+    }
+
+    .about-content>div {
+        padding: 1rem;
+        flex-basis: 30%;
+    }
+}

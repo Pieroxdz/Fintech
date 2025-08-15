@@ -1,0 +1,91 @@
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    color: var(--blanco);
+    padding: .5rem 0;
+    background-color: transparent;
+}
+
+/* PARA EL SCROLL*/
+#header.scrolled {
+    background-color: var(--semiNegro);
+}
+
+/* POSICIONAMOS */
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+
+.nav-logo {
+    font-size: 3.2rem;
+    color: var(--verde);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+/* APARECE CON EL EVENTO DE CLICK AL ICONO HAMBURGUESA */
+.nav-menu {
+    /* Desactivado por defecto */
+    display: none;
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--semiNegro);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .nav-menu {
+        position: static;
+        background-color: unset;
+        justify-content: unset;
+        align-items: unset;
+        min-height: unset;
+        height: 6rem;
+        width: unset;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.5rem;
+        text-transform: lowercase;
+    }
+}
+
+
+.nav-menu a {
+    cursor: pointer;
+}
+
+.nav-menu a:hover {
+    color: var(--verde);
+    transition: .4s ease-in-out;
+}
+
+
+.nav-icon {
+    cursor: pointer;
+    z-index: 10;
+}
+
+@media (min-width: 768px) {
+    #menu-icon {
+        display: none;
+    }
+
+    #close-icon {
+        display: none !important;
+    }
+}

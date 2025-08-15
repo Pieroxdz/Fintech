@@ -1,0 +1,69 @@
+#hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(../assets/images/bg-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+    #hero {
+        height: 100vh;
+    }
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .hero-content {
+        justify-content: start;
+    }
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .hero-text {
+        align-items: flex-start;
+        max-width: 71%;
+    }
+
+    .hero-text h1 {
+        font-size: 3.6rem;
+    }
+}
+
+.hero-form {
+    width: 100%;
+}
+
+
+.hero-form input[type=text],
+.hero-form input[type=email],
+.hero-form .btn {
+    display: block;
+    width: 100%;
+    padding: 1.2rem 2rem;
+    margin: 1.2rem 0;
+    border: 1px solid #ccc;
+}
+
+@media (min-width: 768px) {
+
+    .hero-form input[type=text],
+    .hero-form input[type=email],
+    .hero-form .btn {
+        width: 50%;
+    }
+}

@@ -1,0 +1,40 @@
+#testimonial {
+    background-color: var(--semiNegro);
+    color: var(--semiBlanco);
+}
+
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .testimonial-content {
+        flex-direction: row;
+    }
+}
+
+.test {
+    background-color: #505050;
+    padding: 3rem 3rem;
+    margin: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .test {
+        padding: 4rem 8rem;
+    }
+}
+
+.test .test-image {
+    height: 80px;
+    width: 80px;
+}
+
+.test img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
